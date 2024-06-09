@@ -7,7 +7,5 @@ provider "aws" {
 }
 
 terraform {
-  cloud {
-    organization = "nklkarthi"
-  }
+  cloud {}
 }
