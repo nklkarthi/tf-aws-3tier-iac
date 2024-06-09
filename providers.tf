@@ -8,6 +8,11 @@ provider "aws" {
 
 terraform {
   cloud {
+    organization = "nklkarthi"
     hostname = "app.terraform.io"
+    workspaces {
+      name = "tf-aws-3tier-iac"
+      project = "scb-project"
+    }
   }
 }
