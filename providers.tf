@@ -7,5 +7,12 @@ provider "aws" {
 }
 
 terraform {
-  cloud {}
+  cloud {
+    organization = "nklkarthi"
+
+    workspaces {
+      project = "scb-project"
+      name = "tf-aws-3tier-iac"
+    }
+  }
 }
