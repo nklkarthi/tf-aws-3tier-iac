@@ -14,6 +14,7 @@ module "vpc" {
 
   enable_nat_gateway = true
   enable_vpn_gateway = true
+  enable_flow_log    = true
 
   tags = {
     Terraform   = "true"
