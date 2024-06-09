@@ -9,5 +9,9 @@ provider "aws" {
 terraform {
   cloud {
     organization = "nklkarthi"
+
+    workspaces {
+      name = "scb-project-dev"
+    }
   }
 }
