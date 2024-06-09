@@ -14,10 +14,17 @@ module "vpc" {
 
   enable_nat_gateway = true
   enable_vpn_gateway = true
-  enable_flow_log    = true
+
+  # VPC Flow Logs (Cloudwatch log group and IAM role will be created)
+  enable_flow_log                      = true
+  create_flow_log_cloudwatch_log_group = true
+  create_flow_log_cloudwatch_iam_role  = true
+  flow_log_max_aggregation_interval    = 60
 
   tags = {
     Terraform   = "true"
     Environment = "dev"
   }
+
+
 }
