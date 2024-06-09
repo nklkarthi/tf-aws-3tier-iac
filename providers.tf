@@ -9,9 +9,5 @@ provider "aws" {
 terraform {
   cloud {
     organization = "nklkarthi"
-
-    workspaces {
-      name = "tf-aws-3tier-iac"
-    }
   }
 }
