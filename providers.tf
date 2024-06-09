@@ -7,11 +7,5 @@ provider "aws" {
 }
 
 terraform {
-  cloud {
-    organization = "nklkarthi"
-    hostname = "app.terraform.io"
-    workspaces {
-      project = "scb-project"
-    }
-  }
+  cloud {}
 }
