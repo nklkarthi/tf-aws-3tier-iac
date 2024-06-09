@@ -20,10 +20,10 @@ jobs:
         include:
           - environment: dev
             region: us-east-1
-          - environment: test
-            region: us-west-2
-          - environment: prod
-            region: us-east-2
+          # - environment: test
+          #   region: us-west-2
+          # - environment: prod
+          #   region: us-east-2
     with:
       deploy: false
       tf-version: ${{ vars.TF_VERSION }}
