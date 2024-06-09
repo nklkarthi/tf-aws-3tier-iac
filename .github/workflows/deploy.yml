@@ -44,4 +44,4 @@ jobs:
       environment: ${{ matrix.environment }}
       ref: v1.2.0
     secrets:
-      cli_config_credentials_token: ${{ secrets.TF_TOKEN }}
+      tf-token: ${{ secrets.TF_TOKEN }}
